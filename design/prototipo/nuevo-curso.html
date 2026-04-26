@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Curso - Instituto TecDev</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Instituto TecDev</h1>
+            <p>Plataforma de Gestión de Cursos</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Catálogo</a></li>
+                <li><a href="nuevo-curso.html" class="active">Nuevo Curso</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2>Registrar Nuevo Curso</h2>
+
+        <form id="formNuevoCurso" class="form">
+            <div class="form-group">
+                <label for="nombre">Nombre del Curso *</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: JavaScript Avanzado">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="categoria">Categoría *</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccionar...</option>
+                        <option value="programacion">Programación</option>
+                        <option value="diseño">Diseño</option>
+                        <option value="negocios">Negocios</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="docente">Docente *</label>
+                    <input type="text" id="docente" name="docente" required placeholder="Nombre del docente">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="modalidad">Modalidad *</label>
+                    <select id="modalidad" name="modalidad" required>
+                        <option value="">Seleccionar...</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="virtual">Virtual</option>
+                        <option value="hibrida">Híbrida</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="duracion">Duración (horas) *</label>
+                    <input type="number" id="duracion" name="duracion" required min="1" placeholder="Ej: 40">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="vacantes">Vacantes *</label>
+                    <input type="number" id="vacantes" name="vacantes" required min="1" placeholder="Ej: 30">
+                </div>
+
+                <div class="form-group">
+                    <label for="costo">Costo ($) *</label>
+                    <input type="number" id="costo" name="costo" required min="0" step="0.01" placeholder="Ej: 299.99">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="fechaInicio">Fecha de Inicio *</label>
+                <input type="date" id="fechaInicio" name="fechaInicio" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Descripción *</label>
+                <textarea id="descripcion" name="descripcion" rows="5" required placeholder="Detallar contenido y objetivos del curso"></textarea>
+            </div>
+
+            <div class="form-group checkbox">
+                <input type="checkbox" id="activo" name="activo">
+                <label for="activo">Activar curso inmediatamente</label>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Guardar Curso</button>
+                <a href="cursos.html" class="btn btn-outline">Cancelar</a>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Instituto TecDev. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../javascript/2-funciones.js"></script>
+</body>
+</html>

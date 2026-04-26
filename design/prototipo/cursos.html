@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Cursos - Instituto TecDev</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Instituto TecDev</h1>
+            <p>Plataforma de Gestión de Cursos</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html" class="active">Catálogo</a></li>
+                <li><a href="nuevo-curso.html">Nuevo Curso</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2>Catálogo de Cursos</h2>
+
+        <div class="filters">
+            <input type="text" id="buscar" placeholder="Buscar por nombre..." class="input-field">
+            <select id="categoria" class="input-field">
+                <option value="">Todas las categorías</option>
+                <option value="programacion">Programación</option>
+                <option value="diseño">Diseño</option>
+                <option value="negocios">Negocios</option>
+            </select>
+            <select id="modalidad" class="input-field">
+                <option value="">Todas las modalidades</option>
+                <option value="presencial">Presencial</option>
+                <option value="virtual">Virtual</option>
+                <option value="hibrida">Híbrida</option>
+            </select>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Docente</th>
+                    <th>Modalidad</th>
+                    <th>Duración</th>
+                    <th>Vacantes</th>
+                    <th>Costo</th>
+                    <th>Fecha Inicio</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="cursosTableBody">
+                <tr>
+                    <td colspan="11" style="text-align: center; padding: 20px;">Cargando cursos...</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="actions">
+            <a href="nuevo-curso.html" class="btn btn-primary">+ Nuevo Curso</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Instituto TecDev. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../javascript/3-objetos-cursos.js"></script>
+</body>
+</html>

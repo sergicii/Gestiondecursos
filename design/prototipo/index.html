@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Cursos - Instituto TecDev</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Instituto TecDev</h1>
+            <p>Plataforma de Gestión de Cursos</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="cursos.html">Catálogo</a></li>
+                <li><a href="nuevo-curso.html">Nuevo Curso</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Bienvenido a la Plataforma de Gestión de Cursos</h2>
+            <p>Administra efectivamente el catálogo académico de cursos de extensión del Instituto TecDev</p>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h3>Cursos Activos</h3>
+                <p class="stat-number" id="cursosActivos">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total de Inscritos</h3>
+                <p class="stat-number" id="totalInscritos">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Ingresos Totales</h3>
+                <p class="stat-number" id="ingresosTotal">$0</p>
+            </div>
+        </section>
+
+        <section class="shortcuts">
+            <h2>Acciones Rápidas</h2>
+            <div class="button-group">
+                <a href="nuevo-curso.html" class="btn btn-primary">+ Crear Curso</a>
+                <a href="cursos.html" class="btn btn-secondary">Ver Catálogo</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Instituto TecDev. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
